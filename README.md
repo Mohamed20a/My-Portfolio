@@ -12,7 +12,7 @@ I'm a Frontend web developer...
 Javascript, HTML, CSS, Bootstrap ...
 
 ## Desciption
-This is my project where I have made a simple tictactoe game with the help of HTML, CSS ,Bootstrap and JavaScript.
+A personal website to display my CV in an attractive way.
 
 ## 🔗 Links
 
