@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.6 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -70,3 +62,35 @@ function scrollup(){
 window.scrollY > 100 ? scrollBtn.classList.add('active') : scrollBtn.classList.
 remove('active'); 
 }
+
+
+//loading page
+var loader = document.querySelector('.preloader');
+
+window.addEventListener('load', function(){
+    //loader.style.display = 'none';
+})
+
+
+// Data
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwNsfThyZJkYcYolW4y7pKhCPt_u5e8UCxa06dauPeP9J6u462UP9_gdrpxGs2k_j8uzg/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+            //.then(Response => $("#form_alerts").html("<div class='alert alert-sucess'>contact message sent sucess</div>"))
+            //.catch(error => $("#form_alerts").html("<div class='alert alert-danger'>contact message sent sucess</div>"))
+        })
+
+        let send = document.getElementById('send');
+        let rest = document.getElementById('format');
+        const success = document.getElementById('form_alerts');
+
+        send.addEventListener('click', () => {
+            success.style.display = 'block';
+        });
+
+        rest.addEventListener('click', () => {
+            success.style.display = 'none';
+        });
