@@ -1,3 +1,4 @@
+//navbarResponsive
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -33,12 +34,14 @@ window.addEventListener('DOMContentLoaded', event => {
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
+        document.querySelectorAll('#collapseExample .nav-link')
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
+            } else {
+                (window.getComputedStyle(navbarToggler).display !== 'block')
             }
         });
     });
@@ -75,7 +78,7 @@ window.addEventListener('load', function(){
 // Data
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwNsfThyZJkYcYolW4y7pKhCPt_u5e8UCxa06dauPeP9J6u462UP9_gdrpxGs2k_j8uzg/exec'
         const form = document.forms['google-sheet']
-
+        
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, {method: 'POST', body: new FormData(form)})
@@ -94,3 +97,6 @@ window.addEventListener('load', function(){
         rest.addEventListener('click', () => {
             success.style.display = 'none';
         });
+
+
+
