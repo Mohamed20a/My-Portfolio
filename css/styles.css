@@ -13,6 +13,46 @@
   vertical-align: top;
   border-color: #dee2e6;
 }
+
+/*
+.wave {
+  -webkit-animation-duration: 2.1s;
+  animation-duration: 2.1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: wave-animation;
+  animation-name: wave-animation;
+  display: inline-block;
+  -webkit-transform-origin: 70% 70%;
+  transform-origin: 70% 70%;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } 
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } 
+  100% {
+    transform: rotate(0deg);
+  }
+}  */
+
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
@@ -165,6 +205,17 @@
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.d-none {
+  display: none;
+}
+.invalid-feedback {
+  display: none;
+}
+.btn.disabled {
+  pointer-events: none;
+  opacity: 0.65;
 }
 
 @media (max-width: 575.98px) {
@@ -1068,6 +1119,17 @@ textarea.form-control-lg {
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
   opacity: 0.65;
+}
+
+.btn-primary1{
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.btn-primary1:hover {
+  color: #fff;
+  background-color: #042c47;
+  border-color: #042c47;
 }
 
 .btn-primary {
@@ -2077,6 +2139,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -2094,9 +2157,10 @@ textarea.form-control-lg {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-decoration: none;
   white-space: nowrap;
+  
 }
 .navbar-nav {
   display: flex;
@@ -5418,7 +5482,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mb-auto {
@@ -5687,6 +5751,7 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+  font-size: 20px;
 }
 
 .lh-1 {
@@ -5715,6 +5780,7 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+  font-size: 18px;
 }
 
 .text-decoration-none {
@@ -9480,10 +9546,10 @@ html {
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 18rem;
 }
 
 @media (min-width: 992px) {
