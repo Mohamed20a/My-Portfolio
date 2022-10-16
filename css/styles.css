@@ -9572,6 +9572,8 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 20px 14px 20px 0px rgb(13 39 80 / 25%), -12px 11px 15px 0px #fff;
+  margin: 10px;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
