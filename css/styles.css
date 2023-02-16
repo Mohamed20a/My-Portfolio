@@ -1165,7 +1165,7 @@ textarea.form-control-lg {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
+      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   background-color: transparent;
@@ -1192,20 +1192,37 @@ textarea.form-control-lg {
   opacity: 0.65;
 }
 
-.btn-primary1{
-  color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+.btn-down{
+  border-radius: 30px;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid #1a2530;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #1a2530;
+  transition: .6s ease-in-out;
 }
-.btn-primary1:hover {
+
+.btn-down:hover{
+  width: 100%;
+  height: 100%;
+  background-color: #1a2530;
+  box-shadow: inset 400px 0 0 0 #1a2530;;
+}
+.down-text{
+  padding: 0 2rem;
   color: #fff;
-  background-color: #042c47;
-  border: 2px solid #16a085;
-  box-shadow: #005f4c 0px 0px 12px 1px inset,
-                #005f4c 0px 0px 12px 1px;
-  border-radius: 8px;              
-  /* border-color: #042c47;
-  box-shadow: 0px 0px 16px 10px #28dab7; */
+}
+.down{
+  background-color:#1a2530;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #fff;
 }
 
 .btn-primary {
@@ -2123,7 +2140,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #1abc9c;
+  color: #fff;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -9681,6 +9698,24 @@ html {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+}
+
+.about-img{
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+  margin-top: 2em;
+}
+.about-img > div{
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.about-img > div:hover{
+  flex: 5;
 }
 
 .footer {
